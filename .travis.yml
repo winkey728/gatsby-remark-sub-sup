@@ -1,0 +1,20 @@
+sudo: false
+language: node_js
+node_js:
+- '6'
+- '8'
+install:
+- yarn
+script:
+- yarn test
+after_success:
+- npx codecov
+deploy:
+  provider: npm
+  email: winkeyme@163.com
+  api_key:
+    secure: CY5bQVS4Gl4ZjBYin2VtwbRZBglZl1NIU1xGo5JZGM8ALSRH3628HO3e014v/jBTbC4hh1LQG0T8r4eS0zwNu6DNMHA60Ai3EQNyT09pM0p626hdsvnWrM84xKX9zCCTyvol34opZKMEPzf1OAj6cG7Am9p4I3awkXXLOmfNiZz7F0wn5msVHOIrWsDSeznhllz6aKpm2QY+ji3iqMXndYZ5YShNWYc7eWCB1th11KSpprt2MOw3k5D4U+AaIDImkNBIx9N8ZqqDc1XiaApZyssPo+JOmH1dlHgtcatCeIZCapwaHoqM4KPWWDwR/gFWd4BTM2egHyHorHjOrwzIhxQ1I2ERsWz2vERcJ9gnMaGC66RlC0k4H7yGaRqcMyE+A8pNsvsN6ba9KFvfpqWKkgUrQ6OpVJgj3PC6A3+r19NRcZjH5sMW51XAmVjom4lOn8UC2TVHVAXUaOcAkBcNXR9GsE848JGvrC1NkqNUTj8bKczy4vNxwUkL9HLD+SYEPoPkl7gi36IgfSFs4JxyusjBinGsJFnHllkqJ5ppbzz7lslftDQbeq9kL+00b9zzJCRX6WdvZscCikNG3jVaZlZzWsNkeyioI7JTP/3mHmexHT3SUIa/KLsj9khKfobOO3TnvIAozcbZb2OL0son/LuSWTV8DS0fBy4Xm3r3N68=
+  on:
+    tags: true
+    node: '6'
+  skip_cleanup: true
