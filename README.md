@@ -1,9 +1,9 @@
 # gatsby-remark-sub-sup
 
 [![Build Status](https://travis-ci.org/winkey728/gatsby-remark-sub-sup.svg?branch=master)](https://travis-ci.org/winkey728/gatsby-remark-sub-sup)
-[![codecov](https://codecov.io/gh/winkey728/gatsby-remark-gemoji-to-emoji/branch/master/graph/badge.svg)](https://codecov.io/gh/winkey728/gatsby-remark-sub-sup)
+[![codecov](https://codecov.io/gh/winkey728/gatsby-remark-sub-sup/branch/master/graph/badge.svg)](https://codecov.io/gh/winkey728/gatsby-remark-sub-sup)
 
-Custom syntax to parse subscript and superscript. Rehype compatible (using <sub> and <sup>). Using [remark-sub-super](https://github.com/zestedesavoir/zmarkdown/tree/master/packages/remark-sub-super)
+Custom syntax to parse subscript and superscript. Rehype compatible (using `<sub>` and `<sup>`). Using [remark-sub-super](https://github.com/zestedesavoir/zmarkdown/tree/master/packages/remark-sub-super)
 
 ## Install
 
